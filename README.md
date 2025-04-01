@@ -1,3 +1,23 @@
+**Understanding Differential Gene Expression Analysis with DESeq2**
+
+In this guide, we will explore how DESeq2 identifies differentially expressed genes and how to use this package in R to analyze gene expression differences between two conditions.
+
+We will follow the DESeq2 standard workflow vignette and work with a publicly available dataset, which is also accessible as a Bioconductor package.
+
+The dataset consists of RNA sequencing data from four airway smooth muscle cell lines, each with one treated and one untreated sample. The treatment involves dexamethasone, a medication commonly used by asthma patients to reduce airway inflammation. Our goal is to analyze transcriptional changes induced by dexamethasone treatment.
+
+To perform this analysis, we will use three key R packages:
+
+DESeq2 – for differential gene expression analysis
+
+tidyverse – for data manipulation
+
+airway – to access the dataset from Bioconductor
+
+By the end of this guide, you will understand how to process RNA-seq data, perform differential expression analysis, and interpret the results using DESeq2.
+
+
+
 # Script-for-Differential-Gene-Expression-Analysis-using-DESeq2-N
 
 This script uses the DESeq2 package in R to perform differential gene expression (DGE) analysis. The goal is to identify genes that are significantly differentially expressed between two conditions (e.g., treated vs untreated) by analyzing count data from RNA sequencing (RNA-seq) experiments.
